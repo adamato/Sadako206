@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
 	<!--Meta Data-->
 	<title>Sadako Order Form</title>
@@ -8,7 +10,8 @@
 	<!--Stylesheets-->
 	<link href="css/bootstrap-formhelpers.css" rel="stylesheet">	
 	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-form-helpers.min.css" rel="stylesheet" media="screen">	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -23,27 +26,59 @@
 <header>
 	<h1>Sushi Order Form</h1>
 </header>
-	<div class="col-xs-6 col-xs-offset-3" id="form">
+<div id="form">
+		<form name="order form" action="#" method="post">
 		<fieldset>
 			<legend>Order Information:</legend>
-			<label class = "required"> First name*:<input type="text" name="fname" placeholder = "Finn" required>
-			</label>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="FirstName"> First name*:</label><input type="text" name="FirstName" id="input"placeholder="Finn" required>
+					
+				</div>
+				<div class="col-xs-6">
+					<label for="LastName" class = "required"> Last name:</label><input type="text" name="LastName" id="input" placeholder="Tuna" ><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="Phone">Phone number*: </label><input type="text" class="bfh-phone" name="Phone" id="input" data-format="(ddd) ddd-dddd" placeholder="(734) 555-5555" required><br>		
+				</div>
+				<div class="col-xs-6">
+		  			<label for="Email"> Email: </label><input type="email" name="Email" id="input" placeholder="GariWasabi@Sadako.com"><br>
+		  		</div>
+		  	</div>
 
-		  	<label for="lname" class = "required"> Last name:</label><input type="text" name="lname" placeholder = "Tuna" ><br>
+			<label for = "OrderType"> Order Type*: </label><input type="radio" name="OrderType" value="pickup" required>Pick-Up
+			<input type="radio" name="OrderType" value="delivery" onclick="document.getElementById('delivery')" required>Delivery<br>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="StreetAddress"> Street Address*: </label><input type="text" name="StreetAddress" placeholder="555 State Street" id="input" required>
+				</div>
+				<div class="col-xs-6">
+					<label for="StreetAddress2"> Building Name/Suite/Apt: </label><input type="text" name="StreetAddress2" placeholder="Apt.2" id="input"><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="City"> City*: </label><input type="text" name="City" placeholder="Ann Arbor" id="input" required>
+				</div>
+				<div class="col-xs-6">
+					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" placeholder="48104" id="input">
+				</div>
+			</div>
 
-		  	<label> Email: <input type="email" name="email" placeholder = "sushi@sushi.com"></label><br>
-		
-			<label for="phone">Phone number*: <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder = "1(555)-555-5555" required></label><br>
-
-			<label class = "required"> Order Type*: <input type="radio" name="type" value="pickup">Pickup<br>
-			<input type="radio" name="type" value="delivery">Delivery<br>
+		<button id="action_button" class = "form_buttons" type="submit">Submit</button>
+		<button class ="form_buttons" type="reset">Reset</button>
 
 		</fieldset><br>
-	</div>
 
+	</form>
+</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-formhelpers.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+	<script>
 </body>
+</html>
