@@ -26,14 +26,18 @@
 	<div class="col-xs-6 col-xs-offset-3" id="form">
 		<fieldset>
 			<legend>Order Information:</legend>
-			<label class = "required"> First name*:<input type="text" name="fname" required>
+			<label class = "required"> First name*:<input type="text" name="fname" placeholder = "Finn" required>
 			</label>
 
-		  	<label for="lname" class = "required"> Last name:</label><input type="text" name="lname"><br>
+		  	<label for="lname" class = "required"> Last name:</label><input type="text" name="lname" placeholder = "Tuna" ><br>
 
 		  	<label> Email: <input type="email" name="email" placeholder = "sushi@sushi.com"></label><br>
 		
-			<label for="phone">Phone number*: <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" required></label><br>
+			<label for="phone">Phone number*: <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder = "1(555)-555-5555" required></label><br>
+
+			<label class = "required"> Order Type*: <input type="radio" name="type" value="pickup">Pickup<br>
+			<input type="radio" name="type" value="delivery">Delivery<br>
+
 		</fieldset><br>
 	</div>
 

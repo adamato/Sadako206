@@ -5,8 +5,16 @@ body {
 body h1 {
 	text-align: center;
 	color: white;
+	font-family: Verdana;
 }
 
 #form {
 	background-color: rgba(210,215,211,0.6);;
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		background-image: url('background2.jpg');
+	}
+
 }
