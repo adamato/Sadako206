@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<title>Sadako Order Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<meta name="author" content="co-authored by Angela Damato, Rebecca Lawson, and Colleen Miller">
+	<!--Stylesheets-->
+	<link href="css/bootstrap-formhelpers.css" rel="stylesheet">	
+	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- JQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script	src="js/bootstrap.min.js"></script>
+	<script	src="js/bootstrap-formhelpers.js"></script>
+</head>
+
+<body>
+<header>
+	<h1>Sushi Order Form</h1>
+</header>
+	<div class="col-xs-6 col-xs-offset-3" id="form">
+		<fieldset>
+			<legend>Order Information:</legend>
+			<label class = "required"> First name*:<input type="text" name="fname" required>
+			</label>
+
+		  	<label for="lname" class = "required"> Last name:</label><input type="text" name="lname"><br>
+
+		  	<label> Email: <input type="email" name="email" placeholder = "sushi@sushi.com"></label><br>
+		
+			<label for="phone">Phone number*: <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" required></label><br>
+		</fieldset><br>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-formhelpers.min.js"></script>
+</body>

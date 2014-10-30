@@ -1,0 +1,12 @@
+body {
+	background-image: url('background.jpg');
+}
+
+body h1 {
+	text-align: center;
+	color: white;
+}
+
+#form {
+	background-color: rgba(210,215,211,0.6);;
+}
