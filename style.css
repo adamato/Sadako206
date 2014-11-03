@@ -15,10 +15,7 @@ body h1 {
 	padding: 1em;
 }
 
-#form label {
-	display:block;
-}
-#input {
+.input {
 	width: 100%;
 }
 
