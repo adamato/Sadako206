@@ -48,8 +48,8 @@
 		  	</div>
 		  	<div class="row">
 				<div class="col-xs-6">
-			<label> Order Type*: </label>
-			<input type="radio" name="PickUp" id="PickUp" value="Pick-
+			<label for="OrderType"> Order Type*: </label>
+			<input type="radio" name="OrderType" id="PickUp" value="Pick-
 			Up" required />
 			<label for = "PickUp">Pick-Up</label>
 	
@@ -75,12 +75,16 @@
 				</div>
 			</div>
 
-		<button id="action_button" class = "form_buttons" type="submit">Submit</button>
+		<button id="action_button" class = "form_buttons" type="submit">Place Order</button>
 		<button class ="form_buttons" type="reset">Reset</button>
 
 		</fieldset><br>
 
 	</form>
+
+	<div id="order_contents">
+
+	</div>
 </div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
