@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<title>Sadako Order Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<meta name="author" content="co-authored by Angela Damato, Rebecca Lawson, and Colleen Miller">
+	<!--Stylesheets-->
+	<link href="css/bootstrap-formhelpers.css" rel="stylesheet">	
+	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-form-helpers.min.css" rel="stylesheet" media="screen">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- JQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script	src="js/bootstrap.min.js"></script>
+	<script	src="js/bootstrap-formhelpers.js"></script>
+</head>
+
+<body>
+<header>
+	<h1>Sushi Order Form</h1>
+</header>
+<div id="form">
+		<form name="order form" action="#" method="post">
+		<fieldset>
+			<legend>Order Information:</legend>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="FirstName"> First name*:</label><input type="text" name="FirstName" id="FirstName" class="input" placeholder="Finn" required />
+					
+				</div>
+				<div class="col-xs-6">
+					<label for="LastName" class = "required"> Last name:</label><input type="text" name="LastName" id="LastName" class="input" placeholder="Tuna" /><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="Phone">Phone number*: </label><input type="text" class="bfh-phone input" name="Phone" id="Phone" data-format="(ddd) ddd-dddd" placeholder="(734) 555-5555" required /><br>		
+				</div>
+				<div class="col-xs-6">
+		  			<label for="Email"> Email: </label><input type="email" name="Email" id="Email" class="input" placeholder="GariWasabi@Sadako.com" /><br>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+				<div class="col-xs-6">
+			<label> Order Type*: </label>
+				<input type="radio" name="OrderType" id="PickUp" required>
+				<label for = "PickUp">Pick-Up</label>
+			
+				<input type="radio" name="OrderType" id="Delivery" required><label for ="Delivery"> Delivery</label><br>
+		
+				</div>
+			</div>
+	
+
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="StreetAddress"> Street Address*: </label><input type="text" name="StreetAddress" placeholder="555 State Street" id="StreetAddress" class="input" required />
+				</div>
+				<div class="col-xs-6">
+					<label for="StreetAddress2"> Building Name/Suite/Apt: </label><input type="text" name="StreetAddress2" id="StreetAddress2" placeholder="Apt.2" class="input" /><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="City"> City*: </label><input type="text" name="City" id="City" placeholder="Ann Arbor" class="input" required />
+				</div>
+				<div class="col-xs-6">
+					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="ZipCode" placeholder="48104" class="input" />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<label>Payment Type*: </label>
+						<input type="radio" name="PaymentType" id="Cash" required>
+						<label for= "Cash">Cash</label>
+
+						<input type="radio" name="PaymentType" id="Credit" required>
+						<label for= "Credit">Credit</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="NameOnCard">Name on Card:</label><input type="text" name="NameOnCard" id="NameOnCard" placeholder="Finn Tuna" class="input"/>
+				</div>
+				<div class="col-xs-6">
+					<label for = "CardNumber">Card Number: </label><input type="text" name="CardNumber" id="CardNumber" class="input"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" class="input"/>
+				</div>
+				<div class = "col-xs-6">
+					<label for="expiration">Expiration Date:</label><input type="date" min="today" name="expiration" id="experation" class="input"/>
+				</div>
+			</div>
+		<button id="action_button" class = "form_buttons" type="submit">Submit</button>
+		<button class ="form_buttons" type="reset">Reset</button>
+
+		</fieldset><br>
+
+	</form>
+</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+</body>
+</html>
