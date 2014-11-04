@@ -1,5 +1,6 @@
 body {
 	background-image: url('background2.jpg');
+	padding: 1.5em;
 }
 
 body h1 {
@@ -8,11 +9,12 @@ body h1 {
 	font-family: Verdana;
 }
 
+
 #form {
 	background-color: rgba(210,215,211,0.7);
 	width: 100%;
 	display: block;
-	padding: 1em;
+	padding: 1.5em;
 }
 
 .input {
