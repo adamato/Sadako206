@@ -49,10 +49,10 @@
 		  	<div class="row">
 				<div class="col-xs-6">
 			<label> Order Type*: </label>
-				<input type="radio" name="PickUp" id="PickUp" value="Pick-Up" required/>
+				<input type="radio" name="OrderType" id="PickUp" required>
 				<label for = "PickUp">Pick-Up</label>
 			
-				<input type="radio" name="OrderType" id="Delivery" value="Delivery" required/><label for ="Delivery"> Delivery</label><br>
+				<input type="radio" name="OrderType" id="Delivery" required><label for ="Delivery"> Delivery</label><br>
 		
 				</div>
 			</div>
@@ -75,6 +75,33 @@
 				</div>
 			</div>
 
+			<div class="row">
+				<div class="col-xs-6">
+					<label>Payment Type*: </label>
+						<input type="radio" name="PaymentType" id="Cash" required>
+						<label for= "Cash">Cash</label>
+
+						<input type="radio" name="PaymentType" id="Credit" required>
+						<label for= "Credit">Credit</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="NameOnCard">Name on Card:</label><input type="text" name="NameOnCard" id="NameOnCard" placeholder="Finn Tuna" class="input"/>
+				</div>
+				<div class="col-xs-6">
+					<label for = "CardNumber">Card Number: </label><input type="text" name="CardNumber" id="CardNumber" class="input"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" class="input"/>
+				</div>
+				<div class = "col-xs-6">
+					<label for="expiration">Expiration Date:</label><input type="date" min="today" name="expiration" id="experation" class="input"/>
+				</div>
+			</div>
 		<button id="action_button" class = "form_buttons" type="submit">Submit</button>
 		<button class ="form_buttons" type="reset">Reset</button>
 
