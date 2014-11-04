@@ -2,6 +2,10 @@ body {
 	background-image: url('background2.jpg');
 }
 
+#billing{
+	display: none;
+}
+
 body h1 {
 	text-align: center;
 	color: #ffffff;
