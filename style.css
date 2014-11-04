@@ -1,5 +1,6 @@
 body {
 	background-image: url('background2.jpg');
+	padding: 1.5em;
 }
 
 #billing{
@@ -12,11 +13,22 @@ body h1 {
 	font-family: Verdana;
 }
 
+<<<<<<< Updated upstream
+=======
+#menu {
+	background-color: rgba(210,215,211,0.7);
+	width: 100%;
+	display: block;
+	padding: 2em;
+	margin: 3px;
+}
+>>>>>>> Stashed changes
+
 #form {
 	background-color: rgba(210,215,211,0.7);
 	width: 100%;
 	display: block;
-	padding: 1em;
+	padding: 1.5em;
 }
 
 .input {
@@ -29,6 +41,10 @@ body h1 {
 		background-image: url('background.jpg');		
 	}
 	#form {
+		width: 60%;
+		margin: auto;
+	}
+	#menu {
 		width: 60%;
 		margin: auto;
 	}
