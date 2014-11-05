@@ -38,10 +38,37 @@ body h1 {
 	padding: 1em;
 }
 
+#order_contents {
+	background-color: rgba(210,215,211,0.7);
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	position: relative;
+}
+
 .input {
 	width: 100%;
 }
 
+dt {
+	float: left;
+	clear: both;
+}
+
+dd { 
+	float: right;
+}
+
+#submit {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.menuitem{
+	width: 25px;
+	margin-right: 10px;
+}
 
 @media only screen and (min-width: 680px) {
 	body {
@@ -49,6 +76,13 @@ body h1 {
 	}
 	#form {
 		width: 60%;
-		margin: auto;
+		margin: auto auto auto 10%;
+	}
+	#order_contents {
+		position: fixed;
+		top:13.5%;
+		right: 10%;
+		width: 20%;
+		float: right;
 	}
 }
