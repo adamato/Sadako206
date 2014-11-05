@@ -31,7 +31,6 @@ body h1 {
 	width: 100%;
 }
 
-<<<<<<< HEAD
 dt {
 	float: left;
 	clear: both;
@@ -47,12 +46,10 @@ dd {
 	clear: both;
 }
 
-=======
 .menuitem{
 	width: 25px;
 	margin-right: 10px;
 }
->>>>>>> origin/master
 
 @media only screen and (min-width: 680px) {
 	body {
