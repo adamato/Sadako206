@@ -1,27 +1,36 @@
 body {
 	background-image: url('background2.jpg');
 	padding: 1.5em;
+	text-shadow: 0px 1px 0px white;
 }
 
 body h1 {
 	text-align: center;
 	color: #ffffff;
 	font-family: Verdana;
+	text-shadow: 0px 1px 0px black;
+
 }
 
-<<<<<<< Updated upstream
-=======
+/*<<<<<<< Updated upstream
+=======*/
 #menu {
-	background-color: rgba(210,215,211,0.7);
+	background-color:rgba(210,215,211,0.7);
 	width: 100%;
 	display: block;
-	padding: 2em;
+	padding: 1.5em;
 	margin: 3px;
 }
->>>>>>> Stashed changes
 
+#menu input {
+	width: 15%;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+/*>>>>>>> Stashed changes
+*/
 #form {
-	background-color: rgba(210,215,211,0.7);
+	background-color:rgba(210,215,211,0.7);
 	width: 100%;
 	display: block;
 	padding: 1.5em;
