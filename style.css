@@ -30,6 +30,13 @@ body h1 {
 	margin-bottom: 4px;
 }
 
+
+#GorW input{
+	padding: none;
+	margin: 1px;
+	width: 4%;
+}
+
 #form {
 	background-color:rgba(210,215,211,0.9);
 	width: 100%;
