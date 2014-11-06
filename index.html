@@ -31,6 +31,19 @@
    			x=document.getElementById("billing"); // Find the element
   		 	x.style.display="block";
 		}
+		function calculate(id) 
+		{
+			var x = document.getElementById(id).value;
+		}
+		function closeDelivery() {
+  		 	x=document.getElementById("deliveryFee");
+  		 	x.style.display="none";
+		}
+		function openDelivery() 
+		{
+  		 	x=document.getElementById("deliveryFee");
+  		 	x.style.display="block";		
+  		 }
 	</script>
 </head>
 
@@ -70,10 +83,10 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-6">
-					<input type="text" name="Squid" id="Squid"placeholder="0" class="menuitem"/><label for="Squid">Squid $1.99</label>
+					<input type="number" name="Squid" id="Squid"placeholder="0" class="menuitem"/><label for="Squid">Squid $1.99</label>
 				</div>
 				<div class="col-xs-6">
-					<input type="text" name="Mackerel" id="Mackerel"placeholder="0" class="menuitem"/><label for="Mackerel">Mackerel $2.49</label>
+					<input type="number" name="Mackerel" id="Mackerel"placeholder="0" class="menuitem"/><label for="Mackerel">Mackerel $2.49</label>
 				</div>
 			</div>
 			<div class="row">
@@ -160,9 +173,9 @@
 		  	<div class="row">
 				<div class="col-xs-6">
 					<label for="OrderType"> Order Type*: </label>
-					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" required />
+					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
 					<label for = "PickUp">Pick-Up</label>
-					<input type="radio" name="OrderType" id="Delivery" value="Delivery" required /><label for ="Delivery"> Delivery</label><br>
+					<input type="radio" name="OrderType" id="Delivery" value="Delivery" onclick="openDelivery()" required /><label for ="Delivery"> Delivery</label><br>
 				</div>
 
 			</div>
@@ -260,6 +273,13 @@
 					$
 					<span id="bSubTotal"> 0.00</span>
 				</dd>
+		</dl>
+		<dl class="summary" id="deliveryFee">
+			<dt>DELIVERY FEE</dt>
+			<dd class="money">
+				$
+				<span id="bDelivery">0.00</span>
+			</dd>
 		</dl>
 		<dl class="summary">
 			<dt>TAX</dt>

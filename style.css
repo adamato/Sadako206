@@ -69,18 +69,22 @@ dd {
 	margin-right: 10px;
 }
 
+dl#deliveryFee {
+   display:none;
+}
+
 @media only screen and (min-width: 680px) {
 	body {
 		background-image: url('background.jpg');		
 	}
 	#form {
-		width: 60%;
-		margin: auto auto auto 10%;
+		width: 50%;
+		margin: auto;
 	}
 	#order_contents {
 		position: fixed;
 		top:13.5%;
-		right: 10%;
+		right: 5%;
 		width: 20%;
 		float: right;
 	}
