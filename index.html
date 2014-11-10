@@ -89,6 +89,13 @@
   		 	x=document.getElementById("delivery");
   		 	x.style.display="block";		
   		 }
+  		 function resetMe()
+  		 {
+  		 	document.getElementById("bSubTotal").innerText = 0;
+  		 	document.getElementById("bTax").innerText = 0;
+  		 	document.getElementById("bTotal").innerText = 0;
+  		 	closeDelivery();
+  		 }
 	</script>
 </head>
 
@@ -363,7 +370,7 @@
 		</dl>
 		<div id="submit">
 			<button id="action_button" class = "form_buttons" type="submit" value="Place Order" form="form">Place Order</button>
-			<button class ="form_buttons" type="reset" form="form">Reset</button>	
+			<button class ="form_buttons" type="reset" form="form" onclick="resetMe()">Reset</button>	
 		</div>
 	</div>
 </div>
