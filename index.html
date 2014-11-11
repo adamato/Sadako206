@@ -80,6 +80,8 @@
   		 	x.style.display="none";
   		 	total -= 3.00;
   		 	document.getElementById("bTotal").innerText = total.toFixed(2);
+  		 	x=document.getElementById("delivery");
+  		 	x.style.display="none";
 		}
 
 		function openDelivery() 
@@ -90,6 +92,18 @@
   		 		total += 3.00;
   		 		document.getElementById("bTotal").innerText = total.toFixed(2);
   		 	}
+  		 	x=document.getElementById("deliveryFee");
+  		 	x.style.display="block";	
+  		 	x=document.getElementById("delivery");
+  		 	x.style.display="block";		
+  		 }
+
+  		 function resetMe()
+  		 {
+  		 	document.getElementById("bSubTotal").innerText = 0;
+  		 	document.getElementById("bTax").innerText = 0;
+  		 	document.getElementById("bTotal").innerText = 0;
+  		 	closeDelivery();
   		 }
 	</script>
 </head>
@@ -212,7 +226,7 @@
 	</fieldset>
 	</div>
 	<div>
-		<fieldset>
+	<fieldset>
 
 			<legend>Order Information:</legend>
 			<div class="row">
@@ -243,30 +257,32 @@
 				</div>
 
 			</div>
-
-			<div class="row">
-				<div class="col-xs-6">
-					<label for="StreetAddress"> Street Address*: </label><input type="text" name="StreetAddress" placeholder="555 State Street" id="StreetAddress" class="input" required />
+			<div id="delivery">
+				<div class="row">
+					<div class="col-xs-6">
+						<label for="StreetAddress"> Street Address*: </label><input type="text" name="StreetAddress" placeholder="555 State Street" id="StreetAddress" class="input" required />
+					</div>
+					<div class="col-xs-6">
+						<label for="StreetAddress2"> Building Name/Suite/Apt: </label><input type="text" name="StreetAddress2" id="StreetAddress2" placeholder="Apt.2" class="input" /><br>
+					</div>
 				</div>
-				<div class="col-xs-6">
-					<label for="StreetAddress2"> Building Name/Suite/Apt: </label><input type="text" name="StreetAddress2" id="StreetAddress2" placeholder="Apt.2" class="input" /><br>
+
+				<div class="row">
+					<div class="col-xs-6">
+						<label for="City"> City*: </label><input type="text" name="City" id="City" placeholder="Ann Arbor" class="input" required />
+					</div>
+					<div class="col-xs-6">
+						<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="ZipCode" placeholder="48104" class="input" />
+					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col-xs-6">
-					<label for="City"> City*: </label><input type="text" name="City" id="City" placeholder="Ann Arbor" class="input" required />
-				</div>
-				<div class="col-xs-6">
-					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="ZipCode" placeholder="48104" class="input" />
-				</div>
-			</div>
-
 			<div class="row">
 				<div class="col-xs-6">
 					<label>Payment Type*: </label>
-					<button type="button" onclick="openMe()">Credit</button>
-					<button type="button" onclick="closeMe()">Cash</button>
+					<input type="radio" name="Payment" id="credit" onclick="openMe()"/>
+						<label for= "Credit">Credit</label>
+					<input type="radio" name="Payment" id="cash" onclick="closeMe()"/>
+						<label for= "Cash">Cash</label>
 				</div>
 			</div>
 	</div>
@@ -363,7 +379,7 @@
 		</dl>
 		<div id="submit">
 			<button id="action_button" class = "form_buttons" type="submit" value="Place Order" form="form">Place Order</button>
-			<button class ="form_buttons" type="reset" form="form">Reset</button>	
+			<button class ="form_buttons" type="reset" form="form" onclick="resetMe()">Reset</button>	
 		</div>
 	</div>
 </div>

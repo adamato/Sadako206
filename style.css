@@ -8,6 +8,10 @@ body {
 	display: none;
 }
 
+#delivery{
+	display: none;
+}
+
 body h1 {
 	text-align: center;
 	color: #ffffff;
