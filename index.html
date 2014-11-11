@@ -33,7 +33,7 @@
 		}
 		function calculate()
 		{
-			var subtotal = 0.00;
+			subtotal = 0.00;
 			subtotal += (document.getElementById("Tuna").value * 1.99);
 			subtotal += (document.getElementById("FattyTuna").value * 3.49);
 			subtotal += (document.getElementById("Salmon").value * 1.99);
@@ -68,22 +68,28 @@
 			tax = tax.toFixed(2);
 			document.getElementById("bTax").innerText = tax;
 			total = parseFloat(tax) + parseFloat(subtotal);
-			/*if(document.getElementById("Delivery").checked) {
+
+			if (document.getElementById('Delivery').checked && subtotal > 0.00) {
 				total += 3.00;
 			}
-			else {
-			}	*/		
 			document.getElementById("bTotal").innerText = total.toFixed(2);
 		}
 
 		function closeDelivery() {
   		 	x=document.getElementById("deliveryFee");
   		 	x.style.display="none";
+  		 	total -= 3.00;
+  		 	document.getElementById("bTotal").innerText = total.toFixed(2);
 		}
+
 		function openDelivery() 
 		{
-  		 	x=document.getElementById("deliveryFee");
-  		 	x.style.display="block";		
+			if (subtotal > 0) {
+  		 		x=document.getElementById("deliveryFee");
+  		 		x.style.display="block";
+  		 		total += 3.00;
+  		 		document.getElementById("bTotal").innerText = total.toFixed(2);
+  		 	}
   		 }
 	</script>
 </head>
@@ -229,7 +235,7 @@
 		  	</div>
 
 		  	<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-6" id="OrderSelect">
 					<label for="OrderType"> Order Type*: </label>
 					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
 					<label for = "PickUp">Pick-Up</label>
