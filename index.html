@@ -106,10 +106,11 @@
 
   		 function resetMe()
   		 {
-  		 	document.getElementById("bSubTotal").innerText = 0;
-  		 	document.getElementById("bTax").innerText = 0;
-  		 	document.getElementById("bTotal").innerText = 0;
-  		 	closeDelivery();
+  		 	document.getElementById("bSubTotal").innerText = "0.00";
+  		 	document.getElementById("bTax").innerText = "0.00";
+  		 	document.getElementById("bTotal").innerText = "0.00";
+  		 	x=document.getElementById("deliveryFee");
+  		 	x.style.display="none";
   		 }
 	</script>
 </head>
