@@ -56,6 +56,11 @@ body h1 {
 	position: relative;
 }
 
+#instructions {
+	clear: both;
+	display: block;
+}
+
 .input {
 	width: 100%;
 }
