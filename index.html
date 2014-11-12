@@ -264,12 +264,13 @@
 	</div>
 	<div>
 		  	<div class="row">
-
-					<label for="OrderType"> Order Type*: </label>
+				<div class="col-xs-6" id="OrderSelect">
+				<label> Order Type*: </label>
 					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
 					<label for = "PickUp">Pick-Up</label>
 					<input type="radio" name="OrderType" id="Delivery" value="Delivery" onclick="openDelivery()" required /><label for ="Delivery"> Delivery</label><br>
 				</div>
+
 			</div>
 			<div id="deliveryInfo">
 				<div class="row">
@@ -328,7 +329,7 @@
 			</div>
 
 			<div class="row">
-				<div class = "col-xs-6">
+				<div class = "col-xs-6" id="expirationDate">
 					<label for="expiration">Expiration Date:</label>
 						<select name="month" class="input" id="month">
 							<option value="blank"> </option>

@@ -155,17 +155,12 @@
 		  	</div>
 
 		  	<div class="row">
-				<div class="col-xs-6">
-				<label for="OrderType"> Order Type*: </label>
-					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" required />
+				<div class="col-xs-6" id="OrderSelect">
+				<label> Order Type*: </label>
+					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
 					<label for = "PickUp">Pick-Up</label>
-					<input type="radio" name="OrderType" id="Delivery" value="Delivery" required />
-					<label for ="Delivery"> Delivery</label><br>
-			<label class = "required"> Order Type*: </label>
-				<input type="radio" name="PickUp" id="PickUp" required/>
-				<label for = "PickUp">Pick-Up</label>
-			
-				<input type="radio" name="OrderType" id="Delivery"required/><label for ="Delivery"> Delivery</label><br>
+					<input type="radio" name="OrderType" id="Delivery" value="Delivery" onclick="openDelivery()" required /><label for ="Delivery"> Delivery</label><br>
+				</div>
 
 			</div>
 

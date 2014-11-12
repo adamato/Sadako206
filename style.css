@@ -48,6 +48,12 @@ body h1 {
 	padding: 1em;
 }
 
+#expirationDate select {
+	display: block;
+	width: 50%;
+	clear: both;
+}
+
 #order_contents {
 	background-color:rgba(210,215,211,0.9);
 	width: 100%;
