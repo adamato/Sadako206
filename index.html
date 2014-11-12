@@ -83,44 +83,26 @@
 
 		function closeDelivery() {
   		 		x=document.getElementById("deliveryFee");
-<<<<<<< Updated upstream
-  		 		x.style.display="none";			
-=======
   		 		x.style.display="none";	
   		 		x=document.getElementById("deliveryInfo");
   		 		x.style.display="none";		
->>>>>>> Stashed changes
 			if (subtotal > 0) {
   		 		total -= 3.00;
   		 		document.getElementById("bTotal").innerText = total.toFixed(2);
   		 	}
-<<<<<<< Updated upstream
-  		 	x=document.getElementById("deliveryInfo");
-  		 	x.style.display="none";
-=======
-  
->>>>>>> Stashed changes
 		}
 
 		function openDelivery() 
 		{
-<<<<<<< Updated upstream
-=======
+
 			x=document.getElementById("deliveryInfo");
   		 	x.style.display="block";	
->>>>>>> Stashed changes
 			if (subtotal > 0) {
   		 		x=document.getElementById("deliveryFee");
   		 		x.style.display="block";
   		 		total += 3.00;
   		 		document.getElementById("bTotal").innerText = total.toFixed(2);
   		 	}	
-<<<<<<< Updated upstream
-  		 	x=document.getElementById("deliveryInfo");
-  		 	x.style.display="block";		
-=======
-  		 		
->>>>>>> Stashed changes
   		 }
 
   		 function resetMe()
@@ -276,11 +258,7 @@
 		  	</div>
 
 		  	<div class="row">
-<<<<<<< Updated upstream
-				<div class="col-xs-6" id="OrderSelect">
-=======
 				<div class="col-xs-12" id="OrderSelect">
->>>>>>> Stashed changes
 					<label for="OrderType"> Order Type*: </label>
 					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
 					<label for = "OrderType">Pick-Up</label>
