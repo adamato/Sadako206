@@ -1,0 +1,178 @@
+body {
+	background-color: red;
+	padding: 1.5em;
+	color: black;
+	font-family: Arial;
+	text-shadow: 0px 0.9px 0px #000000;
+}
+
+
+#billing{
+	display: none;
+}
+
+#delivery{
+	display: none;
+}
+
+body h1 {
+	text-align: center;
+	color: #000000;
+	font-family: Arial;
+	text-shadow: 0px 1px 0px black;
+}
+
+body h1:hover {
+	color: #FFFFFF;
+}
+
+#menu {
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	margin: 4px;
+	font-size: 18px;
+}
+
+#menu > fieldset > div.row > div.col-xs-6 {
+	width: 100%!important;
+}
+
+#menu:hover {
+	color: #E80923;
+	background-color: #FFFFFF;
+}
+
+#menu input {
+	width: 30%;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+
+
+#GorW input {
+    display:none; 
+    margin:10px;
+    width: 100%;
+}
+
+#GorW input[type=radio] + label {
+    display:inline-block;
+    padding: 12px 12px;
+    background-color: #E7E7E7;
+    border-color: #ddd;
+}
+
+#GorW input[id="Yes"]:checked + label { 
+   background-image: none;
+   background-color:#BFF8FF;
+   color: #0320FF;
+}
+
+#GorW input[id="No"]:checked + label { 
+   background-image: none;
+   background-color:#FFBFBF;
+   color: #FF0000;
+}
+
+#GorW input[id="JustGinger"]:checked + label { 
+   background-image: none;
+   background-color:#FFBFBF;
+   color: #C67171;
+}
+
+#GorW input[id="JustWasabi"]:checked + label { 
+   background-image: none;
+   background-color:#BFFFC1;
+   color: #1AFF00;
+}
+
+#form {
+	background-color:rgba(210,215,211,1.0);
+	width: 100%;
+	display: block;
+	padding: 1em;
+}
+
+
+#billing:hover {
+	color: #E80923;
+	background-color: #FFFFFF;
+}
+
+
+#order_contents {
+	background-color:rgba(210,215,211,1.0);
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	position: relative;
+}
+#order_contents:hover {
+	color: #E80923;
+	background-color: #FFFFFF;
+}
+
+.input {
+	width: 100%;
+}
+
+dt {
+	float: left;
+	clear: both;
+}
+
+dd { 
+	float: right;
+}
+
+#submit {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+#submit:hover {
+	color: #FF5ECF;
+}
+
+.menuitem{
+	width: 25px;
+	margin-right: 10px;
+}
+
+dl#deliveryFee {
+   display:none;
+}
+
+@media only screen and (min-width: 680px) {
+	body {
+		background-image: url('sadako logo.jpg');		
+	}
+
+	body h1 {
+		color: red;
+		background-color:rgba(215,215,211,0.5);
+		display: hidden;
+		margin: 10px;
+		padding: none;
+		width: 100%;
+	}
+	
+	#menu {
+		font-size: 20px;
+	}
+
+	#form {
+		width: 50%;
+		margin: auto;
+	}
+	#order_contents {
+		position: fixed;
+		top:13.5%;
+		right: 5%;
+		width: 20%;
+		float: right;
+	}
+}
