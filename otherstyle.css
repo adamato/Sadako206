@@ -63,7 +63,11 @@ body h1:hover {
 	margin-bottom: 4px;
 }
 
-
+#expirationDate select {
+	display: block;
+	width: 30%;
+	clear: both;
+}
 
 #GorW input {
     display:none; 

@@ -82,10 +82,11 @@
 		}
 
 		function closeDelivery() {
-  		 		x=document.getElementById("deliveryFee");
-  		 		x.style.display="none";	
-  		 		x=document.getElementById("deliveryInfo");
-  		 		x.style.display="none";		
+  		 	x=document.getElementById("deliveryFee");
+  		 	x.style.display="none";		
+  		 	y=document.getElementById("deliveryInfo");
+  		 	y.style.display="none";  		 			
+
 			if (subtotal > 0) {
   		 		total -= 3.00;
   		 		document.getElementById("bTotal").innerText = total.toFixed(2);
@@ -94,7 +95,8 @@
 
 		function openDelivery() 
 		{
-
+  		 	y=document.getElementById("deliveryInfo");
+  		 	y.style.display="block";			
 			x=document.getElementById("deliveryInfo");
   		 	x.style.display="block";	
 			if (subtotal > 0) {
@@ -114,6 +116,10 @@
   		 	document.getElementById("bTotal").innerText = "0.00";
   		 	x=document.getElementById("deliveryFee");
   		 	x.style.display="none";
+  		 	x=document.getElementById("billing");
+  		 	x.style.display="none";
+  		 	x=document.getElementById("deliveryInfo");
+  		 	x.style.display="none";	
   		 }
 	</script>
 </head>
@@ -219,7 +225,7 @@
 				<div id = "GorW">
 				<div class="row">
 				<div class="col-xs-12">
-					<label for="GingerWasabi"> Would you like ginger and wasabi?*: </label>
+					<label> Would you like ginger and wasabi?*: </label>
 					<p>
 						<input type="radio" name="GingerWasabi" id="Yes" value="Yes" required />
 						<label for = "Yes">Yes</label>
@@ -235,8 +241,8 @@
 			</div>
 	</fieldset>
 	</div>
-	<div id="orderinfo">
-
+	<div>
+		<fieldset>
 			<legend>Order Information:</legend>
 			<div class="row">
 				<div class="col-xs-6">
@@ -247,7 +253,7 @@
 					<label for="LastName" class = "required"> Last name:</label><input type="text" name="LastName" id="LastName" class="input" placeholder="Tuna" /><br>
 				</div>
 			</div>
-
+		
 			<div class="row">
 				<div class="col-xs-6">
 					<label for="Phone">Phone number*: </label><input type="text" class="bfh-phone input" name="Phone" id="Phone" data-format="(ddd) ddd-dddd" placeholder="(734) 555-5555" required /><br>		
@@ -258,9 +264,9 @@
 		  	</div>
 		  	<div class="row">
 				<div class="col-xs-12" id="OrderSelect">
-					<label for="OrderType"> Order Type*: </label>
+				<label> Order Type*: </label>
 					<input type="radio" name="OrderType" id="PickUp" value="Pick-Up" onclick="closeDelivery()" required />
-					<label for = "OrderType">Pick-Up</label>
+					<label for = "PickUp">Pick-Up</label>
 					<input type="radio" name="OrderType" id="Delivery" value="Delivery" onclick="openDelivery()" required /><label for ="Delivery"> Delivery</label><br>
 				</div>
 
@@ -293,8 +299,10 @@
 						<label for= "Cash">Cash</label>
 				</div>
 			</div>
+		</fieldset>
 	</div>
 	<div id="billing">
+		<fieldset>
 			<legend>Billing Information</legend>			
 			<div class="row">
 				<div class="col-xs-6">
@@ -303,7 +311,7 @@
 				<div class="col-xs-6">
 					<label for="Cardtype">Card Type:</label>
 					<select name="Cardtype" class="input" id="Cardtype">
-						<option value="blank"></option>
+						<option value="blank">Choose</option>
 						<option value="mastercard">Mastercard</option>
 						<option value="visa">Visa</option>
 						<option value="amex">American Express</option>
@@ -322,9 +330,9 @@
 			</div>
 
 			<div class="row">
-				<div class = "col-xs-6">
-					<label for="expiration">Expiration Date:</label>
-						<select name="month" class="input" id="month">
+				<div class = "col-xs-6" id="expirationDate">
+					<label for="date">Expiration Date:</label>
+						<select name="date" class="input" id="date">
 							<option value="blank"> </option>
 							<option value="01">01</option>
 							<option value="02">02</option>
@@ -339,7 +347,7 @@
 							<option value="11">11</option>
 							<option value="12">12</option>
 						</select>
-						<select name="year" class="input" id="year">
+						<select name="date" class="input" id="year">
 							<option value="blank"> </option>
 							<option value="2014">2014</option>
 							<option value="2015">2015</option>
@@ -368,15 +376,15 @@
 					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="DeliveryZipCode" placeholder="48104" class="input"/>
 				</div>
 			</div>
+		</fieldset>
 		</div>
-
 	</form>
-</div>
 
-	
+
 <div id="order_contents">
 <form name="order contents" action="#" method="post">
-<legend>Order Contents</legend>
+	<fieldset>
+	<legend>Order Contents</legend>
 
 		<dl class="summary">
 			<dt>SUB TOTAL</dt>
@@ -414,16 +422,10 @@
 			<button id="action_button" class = "form_buttons" type="submit" value="Place Order" form="form">Place Order</button>
 			<button class ="form_buttons" type="reset" form="form" onclick="resetMe()">Reset</button>	
 		</div>
-	</div>
-</div>
+	</fieldset>
 </form>
-	</div>
+</div>
 	
-
-
-</form>
-
-</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
