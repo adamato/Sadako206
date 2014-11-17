@@ -52,11 +52,6 @@ body h1:hover {
 	background-color: #FFFFFF;
 }
 
-#ordertype:hover {
-	color: #E80923;
-	background-color: #FFFFFF;
-}
-
 #menu input {
 	width: 30%;
 	margin-right: 10px;
@@ -170,7 +165,7 @@ dl#deliveryFee {
 }
 
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 750px) {
 	body {
 		background-image: url('sadako logo.jpg');		
 	}
