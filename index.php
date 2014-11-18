@@ -11,7 +11,7 @@
 	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-form-helpers.min.css" rel="stylesheet" media="screen">	
-	<link rel="stylesheet" type="text/css" href="otherstyle.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -129,7 +129,8 @@
 	<h1>Sushi Order Form</h1>
 </header>
 
-<form name="order form" method="post" id="form" action="process.php">
+<form name="order form" action="process.php" method="post" id="form">
+
 	<div id="menu">
 	<fieldset>
 		<legend>Menu:</legend>
@@ -324,7 +325,12 @@
 					<input type="text" name="CardNumber" id="CardNumber" placeholder="XXXX XXXX XXXX XXXX" class="input">
 				</div>
 				<div class="col-xs-6">
+<<<<<<< Updated upstream
+					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" pattern="[0-9]{3}" class="input"/>
+
 					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" maxlength="3" class="input"/>
+					<label for = "secure">Security Code: </label><input type="number" max="999" name ="secure" id= "secure" placeholder="123" class="input"/>
+
 				</div>
 			</div>
 
