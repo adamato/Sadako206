@@ -293,9 +293,9 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<label>Payment Type*: </label>
-					<input type="radio" name="Payment" id="Credit" onclick="openMe()"/>
+					<input type="radio" name="Payment" id="Credit" value="Credit" onclick="openMe()"/>
 						<label for= "Credit">Credit</label>
-					<input type="radio" name="Payment" id="Cash" onclick="closeMe()"/>
+					<input type="radio" name="Payment" id="Cash" value="Cash" onclick="closeMe()"/>
 						<label for= "Cash">Cash</label>
 				</div>
 			</div>
@@ -332,7 +332,7 @@
 			<div class="row">
 				<div class = "col-xs-6" id="expirationDate">
 					<label for="date">Expiration Date:</label>
-						<select name="date" class="input" id="date">
+						<select name="month" class="input" id="date">
 							<option value="blank"> </option>
 							<option value="01">01</option>
 							<option value="02">02</option>
@@ -347,7 +347,7 @@
 							<option value="11">11</option>
 							<option value="12">12</option>
 						</select>
-						<select name="date" class="input" id="year">
+						<select name="year" class="input" id="year">
 							<option value="blank"> </option>
 							<option value="2014">2014</option>
 							<option value="2015">2015</option>
