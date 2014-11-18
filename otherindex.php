@@ -285,7 +285,7 @@
 						<label for="City"> City*: </label><input type="text" name="City" id="City" placeholder="Ann Arbor" class="input"/>
 					</div>
 					<div class="col-xs-6">
-						<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="ZipCode" placeholder="48104" class="input" />
+						<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="ZipCode" pattern="[0-9]{5}" placeholder="48104" class="input" />
 					</div>
 				</div>
 			</div>
@@ -324,7 +324,7 @@
 					<input type="text" name="CardNumber" id="CardNumber" placeholder="XXXX XXXX XXXX XXXX" class="input">
 				</div>
 				<div class="col-xs-6">
-					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" maxlength="3" class="input"/>
+					<label for = "secure">Security Code: </label><input type="text" name ="secure" id= "secure" placeholder="123" pattern="[0-9]{3}" class="input"/>
 				</div>
 			</div>
 
@@ -372,7 +372,7 @@
 					<label for="City"> City*: </label><input type="text" name="City" id="DeliveryCity" placeholder="Ann Arbor" class="input"/>
 				</div>
 				<div class="col-xs-6">
-					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="DeliveryZipCode" placeholder="48104" class="input"/>
+					<label for="ZipCode"> Zip Code: </label><input type="text" name="ZipCode" id="DeliveryZipCode" pattern="[0-9]{5}" placeholder="48104" class="input"/>
 				</div>
 			</div>
 		</fieldset>
