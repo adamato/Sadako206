@@ -19,6 +19,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script	src="js/bootstrap.min.js"></script>
 	<script	src="js/bootstrap-formhelpers.js"></script>
+	<script src = "validate.js" type="text/javascript"></script>
 	<script>
 		function closeMe()
 		{
@@ -129,7 +130,7 @@
 	<h1>Sushi Order Form</h1>
 </header>
 
-<form name="order form" action="process.php" method="post" id="form">
+<form name="orderform" action="process.php" method="post" id="form" onsubmit="return checkEmail(this) && checkZip(this)">
 
 	<div id="menu">
 	<fieldset>
