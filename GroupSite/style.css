@@ -1,0 +1,32 @@
+body{
+	background-color: #EDEACB;
+}
+
+.nav{
+	width: 100%;
+	background-color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+}
+
+.current{
+	color: #D61818 !important; 
+}
+
+.nav a{
+	color: #EDEACB;
+	font-size: 2em;
+	font-family: "Cambria";
+}
+
+a:hover{
+	background-color: #000000;
+}
+
+footer{
+	width: 100%;
+	background-color: #000000;
+	color: #EDEACB;
+	text-align: center;
+}
