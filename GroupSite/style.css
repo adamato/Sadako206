@@ -1,5 +1,10 @@
 body{
 	background-color: #EDEACB;
+	height: 500px;
+}
+
+header {
+	padding: 0 0 1%;
 }
 
 .nav{
@@ -16,12 +21,23 @@ body{
 
 .nav a{
 	color: #EDEACB;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-family: "Cambria";
+	transition: 500ms;
 }
 
-a:hover{
-	background-color: #000000;
+.nav li a:hover{
+	background-color: #766c6a;
+}
+
+.contact {
+	background-color: #EDEACB;
+	color: #000;
+}
+
+#contact_text {
+	text-align: center;
+	padding-bottom: 0.8em;
 }
 
 footer{
@@ -29,4 +45,6 @@ footer{
 	background-color: #000000;
 	color: #EDEACB;
 	text-align: center;
+	clear:both;
+	bottom: 0;
 }

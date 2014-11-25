@@ -1,0 +1,104 @@
+body {
+	background-image: url('background2.jpg');
+}
+
+#billing{
+	display: none;
+}
+
+#deliveryInfo{
+	display: none;
+}
+
+
+#menu {
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	margin: 3px;
+}
+
+#menu input {
+	width: 15%;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+
+#GorW input{
+	padding: none;
+	margin: 1px;
+	width: 4%;
+}
+
+#form {
+	background-color:rgba(210,215,211,0.9);
+	width: 100%;
+	display: block;
+	padding: 1em;
+}
+
+#expirationDate select {
+	display: block;
+	width: 30%;
+	clear: both;
+}
+
+#order_contents {
+	background-color:rgba(210,215,211,0.9);
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	position: absolute;
+	top: 500;
+}
+
+#instructions {
+	clear: both;
+	display: block;
+}
+
+.input {
+	width: 100%;
+}
+
+dt {
+	float: left;
+	clear: both;
+}
+
+dd { 
+	float: right;
+}
+
+#submit {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.menuitem{
+	width: 25px;
+	margin-right: 10px;
+}
+
+dl#deliveryFee {
+   display:none;
+}
+
+@media only screen and (min-width: 680px) {
+	body {
+		background-image: url('background.jpg');		
+	}
+	#form {
+		width: 50%;
+		margin: auto;
+	}
+	#order_contents {
+		position: fixed;
+		top:13.5%;
+		right: 5%;
+		width: 20%;
+		float: right;
+	}
+}

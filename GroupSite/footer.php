@@ -1,3 +1,3 @@
 <footer>
-	<p>&copy;2014</p>
+	&copy;2014
 </footer>

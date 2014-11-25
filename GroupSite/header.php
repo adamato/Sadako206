@@ -1,8 +1,9 @@
 <header>
 	<nav>
-		
+
 		<ul class="nav nav-justified">
-			<li><img id="logo" src="sadako-logo.png" alt="Sadako Logo"></li>
+			
+			<li><img id="logo" src="sadako-logo.png" alt="Sadako Logo"/></li>			
 			<li><a href="index.php"
 				<?php
 	  				if ($fName == "index.php"){
