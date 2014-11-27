@@ -1,113 +1,68 @@
-body {
-	background-image: url('background2.jpg');
-	padding: 1.5em;
-	text-shadow: 0px 1px 0px white;
+body{
+	background-color: #EDEACB;
+	height: 500px;
 }
 
-#billing{
-	display: none;
+header {
+	padding: 0 0 1%;
 }
 
-#deliveryInfo{
-	display: none;
+.nav{
+	width: 100%;
+	background-color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-bottom: 2px;
 }
 
-body h1 {
+.current{
+	color: #D61818 !important; 
+}
+
+.nav a{
+	color: #EDEACB;
+	font-size: 1.8em;
+	font-family: "Cambria";
+	transition: 500ms;
+}
+
+.nav li a:hover{
+	background-color: #766c6a;
+}
+
+.contact {
+	background-color: #EDEACB;
+	color: #000;
+}
+
+#contact_text {
 	text-align: center;
-	color: #ffffff;
-	font-family: Verdana;
-	text-shadow: 0px 1px 0px black;
-
+	padding-bottom: 0.8em;
 }
 
+.catering {
+	text-align: center;
+	margin-bottom: 100px;
+}
 
-#menu {
+#catering{
 	width: 100%;
-	display: block;
-	padding: 1.5em;
-	margin: 3px;
-}
-
-#menu input {
-	width: 15%;
-	margin-right: 10px;
-	margin-bottom: 4px;
+	margin-bottom: 20px;
+	display: none;
 }
 
 
-#GorW input{
-	padding: none;
-	margin: 1px;
-	width: 4%;
-}
-
-#form {
-	background-color:rgba(210,215,211,0.9);
+footer{
 	width: 100%;
-	display: block;
-	padding: 1em;
+	background-color: #000000;
+	color: #EDEACB;
+	text-align: center;
+	clear:both;
+	bottom: 0;
 }
 
-#expirationDate select {
-	display: block;
-	width: 30%;
-	clear: both;
-}
-
-#order_contents {
-	background-color:rgba(210,215,211,0.9);
-	width: 100%;
-	display: block;
-	padding: 1.5em;
-	position: relative;
-}
-
-#instructions {
-	clear: both;
-	display: block;
-}
-
-.input {
-	width: 100%;
-}
-
-dt {
-	float: left;
-	clear: both;
-}
-
-dd { 
-	float: right;
-}
-
-#submit {
-	position: relative;
-	display: block;
-	clear: both;
-}
-
-.menuitem{
-	width: 25px;
-	margin-right: 10px;
-}
-
-dl#deliveryFee {
-   display:none;
-}
-
-@media only screen and (min-width: 680px) {
-	body {
-		background-image: url('background.jpg');		
-	}
-	#form {
-		width: 50%;
-		margin: auto;
-	}
-	#order_contents {
-		position: fixed;
-		top:13.5%;
-		right: 5%;
-		width: 20%;
-		float: right;
+@media only screen and (min-width: 767px){
+	#catering{
+		display: block;
 	}
 }
