@@ -1,0 +1,67 @@
+body{
+	background-color: #EDEACB;
+}
+
+.nav{
+	width: 100%;
+	background-color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+}
+
+.current{
+	color: #D61818 !important; 
+}
+
+.nav a{
+	color: #EDEACB;
+	font-size: 2em;
+	font-family: "Cambria";
+}
+
+a:hover{
+	background-color: #000000;
+}
+
+.nigiri-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.sushi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.spec-sushi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.spec-sushi-sashimi{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.sashimi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.party-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.drinks-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+footer{
+	width: 100%;
+	background-color: #000000;
+	color: #EDEACB;
+	text-align: center;
+}
