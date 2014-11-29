@@ -15,7 +15,6 @@
 	<?php include("header.php");
 	?>
 	<div class="menu">
-		<div class="col-xs-6" id="roll_maki">
 			<h2>Rolls &#40;Maki&#41;</h2>
 				<ol class="roll-list">
 					<li><b>AVOCADO</b>: fresh avocado <i><b> $2.49 &#40;hand roll $1.49&#41;</b></i></li>
@@ -77,7 +76,7 @@
 			</div>
 		</div>
 
-		<div class="col-xs-6" id="other_sushi">
+		<div class="other_sushi">
 			<h2>A La Carte &#40;Nigiri&#41;</h2>
 				<ul class="nigiri-list">
 					<li><b>*TUNA &#40;maguro&#41;<i> $1.99</i></b></li>

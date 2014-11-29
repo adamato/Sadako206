@@ -24,6 +24,14 @@ a:hover{
 	background-color: #000000;
 }
 
+.roll-list {
+	width: 100%;
+}
+
+.other-sushi{
+	width: 100%;
+}
+
 .nigiri-list{
 	list-style: none;
 	padding-bottom: 2px;
@@ -64,4 +72,16 @@ footer{
 	background-color: #000000;
 	color: #EDEACB;
 	text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+	.roll-list {
+		float: left;
+		width: 50%;
+	}
+	.other-sushi {
+		float: left;
+		width: 50%;
+	}
+
 }
