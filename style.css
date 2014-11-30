@@ -1,113 +1,96 @@
-body {
-	background-image: url('background2.jpg');
-	padding: 1.5em;
-	text-shadow: 0px 1px 0px white;
+body{
+	background-color: #EDEACB;
 }
 
-#billing{
-	display: none;
-}
-
-#deliveryInfo{
-	display: none;
-}
-
-body h1 {
-	text-align: center;
-	color: #ffffff;
-	font-family: Verdana;
-	text-shadow: 0px 1px 0px black;
-
-}
-
-
-#menu {
+.nav{
 	width: 100%;
-	display: block;
-	padding: 1.5em;
-	margin: 3px;
+	background-color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-bottom: 2px;
 }
 
-#menu input {
-	width: 15%;
-	margin-right: 10px;
-	margin-bottom: 4px;
+.current{
+	color: #D61818 !important; 
 }
 
-
-#GorW input{
-	padding: none;
-	margin: 1px;
-	width: 4%;
+.nav a{
+	color: #EDEACB;
+	font-size: 2em;
+	font-family: "Cambria";
 }
 
-#form {
-	background-color:rgba(210,215,211,0.9);
+a:hover{
+	background-color: #000000;
+}
+
+.roll-list {
 	width: 100%;
-	display: block;
-	padding: 1em;
 }
 
-#expirationDate select {
-	display: block;
+.other-sushi{
+	width: 100%;
+}
+
+.nigiri-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.sushi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.spec-sushi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.spec-sushi-sashimi{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.sashimi-combo-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.party-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.drinks-list{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.catering{
+	margin-left: 30px;
+}
+
+#cater{
 	width: 30%;
-	clear: both;
+	display: inline;
 }
 
-#order_contents {
-	background-color:rgba(210,215,211,0.9);
+footer{
 	width: 100%;
-	display: block;
-	padding: 1.5em;
-	position: relative;
+	background-color: #000000;
+	color: #EDEACB;
+	text-align: center;
 }
 
-#instructions {
-	clear: both;
-	display: block;
-}
-
-.input {
-	width: 100%;
-}
-
-dt {
-	float: left;
-	clear: both;
-}
-
-dd { 
-	float: right;
-}
-
-#submit {
-	position: relative;
-	display: block;
-	clear: both;
-}
-
-.menuitem{
-	width: 25px;
-	margin-right: 10px;
-}
-
-dl#deliveryFee {
-   display:none;
-}
-
-@media only screen and (min-width: 680px) {
-	body {
-		background-image: url('background.jpg');		
-	}
-	#form {
+@media only screen and (min-width: 750px) {
+	.roll-list {
+		float: left;
 		width: 50%;
-		margin: auto;
 	}
-	#order_contents {
-		position: fixed;
-		top:13.5%;
-		right: 5%;
-		width: 20%;
-		float: right;
+	.other-sushi {
+		float: left;
+		width: 50%;
 	}
+
 }
