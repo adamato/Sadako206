@@ -1,96 +1,113 @@
-body{
-	background-color: #EDEACB;
+body {
+	background-image: url('background2.jpg');
+	padding: 1.5em;
+	text-shadow: 0px 1px 0px white;
 }
 
-.nav{
-	width: 100%;
-	background-color: #000000;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding-bottom: 2px;
+#billing{
+	display: none;
 }
 
-.current{
-	color: #D61818 !important; 
+#deliveryInfo{
+	display: none;
 }
 
-.nav a{
-	color: #EDEACB;
-	font-size: 2em;
-	font-family: "Cambria";
-}
-
-a:hover{
-	background-color: #000000;
-}
-
-.roll-list {
-	width: 100%;
-}
-
-.other-sushi{
-	width: 100%;
-}
-
-.nigiri-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.sushi-combo-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.spec-sushi-combo-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.spec-sushi-sashimi{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.sashimi-combo-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.party-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.drinks-list{
-	list-style: none;
-	padding-bottom: 2px;
-}
-
-.catering{
-	margin-left: 30px;
-}
-
-#cater{
-	width: 30%;
-	display: inline;
-}
-
-footer{
-	width: 100%;
-	background-color: #000000;
-	color: #EDEACB;
+body h1 {
 	text-align: center;
+	color: #ffffff;
+	font-family: Verdana;
+	text-shadow: 0px 1px 0px black;
+
 }
 
-@media only screen and (min-width: 750px) {
-	.roll-list {
-		float: left;
-		width: 50%;
-	}
-	.other-sushi {
-		float: left;
-		width: 50%;
-	}
 
+#menu {
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	margin: 3px;
+}
+
+#menu input {
+	width: 15%;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+
+#GorW input{
+	padding: none;
+	margin: 1px;
+	width: 4%;
+}
+
+#form {
+	background-color:rgba(210,215,211,0.9);
+	width: 100%;
+	display: block;
+	padding: 1em;
+}
+
+#expirationDate select {
+	display: block;
+	width: 30%;
+	clear: both;
+}
+
+#order_contents {
+	background-color:rgba(210,215,211,0.9);
+	width: 100%;
+	display: block;
+	padding: 1.5em;
+	position: relative;
+}
+
+#instructions {
+	clear: both;
+	display: block;
+}
+
+.input {
+	width: 100%;
+}
+
+dt {
+	float: left;
+	clear: both;
+}
+
+dd { 
+	float: right;
+}
+
+#submit {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.menuitem{
+	width: 25px;
+	margin-right: 10px;
+}
+
+dl#deliveryFee {
+   display:none;
+}
+
+@media only screen and (min-width: 680px) {
+	body {
+		background-image: url('background.jpg');		
+	}
+	#form {
+		width: 50%;
+		margin: auto;
+	}
+	#order_contents {
+		position: fixed;
+		top:13.5%;
+		right: 5%;
+		width: 20%;
+		float: right;
+	}
 }
