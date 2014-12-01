@@ -67,14 +67,28 @@ a:hover{
 	padding-bottom: 2px;
 }
 
+.catering{
+	margin: 20px;
+	text-align: center;
+}
+
+#cater{
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 20px;
+	display: none;
+}
+
 footer{
 	width: 100%;
 	background-color: #000000;
 	color: #EDEACB;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 767px) {
 	.roll-list {
 		float: left;
 		width: 50%;
@@ -83,5 +97,7 @@ footer{
 		float: left;
 		width: 50%;
 	}
-
+	#cater{
+		display: block;
+	}
 }
