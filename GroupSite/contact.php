@@ -5,7 +5,7 @@
 	<title>Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="bootstrap.min.css" rel="stylesheet">
      <link href='https://www.google.com/maps/embed/v1/MODE?key=API_KEY&parameters' rel='stylesheet' type='text/css'>
      <link href="style.css" rel="stylesheet">
 </head>

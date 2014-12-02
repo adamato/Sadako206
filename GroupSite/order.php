@@ -9,7 +9,7 @@
 	<!--Stylesheets-->
 	<link href="css/bootstrap-formhelpers.css" rel="stylesheet">	
 	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-form-helpers.min.css" rel="stylesheet" media="screen">	
 	<link rel="stylesheet" type="text/css" href="order.css">
     <link href="style.css" rel="stylesheet">
