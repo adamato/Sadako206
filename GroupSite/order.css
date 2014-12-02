@@ -87,7 +87,7 @@ dl#deliveryFee {
    display:none;
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 767px) {
 	body {
 		background-image: url('background.jpg');		
 	}
