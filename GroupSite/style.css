@@ -79,13 +79,26 @@ a:hover{
 	display: none;
 }
 
+#warning{
+	margin-bottom: 50px;
+}
+
+#contact_text{
+	margin-bottom: 50px;
+}
+
 footer{
 	width: 100%;
+	padding: 5px;
 	background-color: #000000;
 	color: #EDEACB;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
+}
+
+iframe{
+	display: none;
 }
 
 @media only screen and (min-width: 767px) {
@@ -98,6 +111,9 @@ footer{
 		width: 50%;
 	}
 	#cater{
+		display: block;
+	}
+	iframe{
 		display: block;
 	}
 }

@@ -139,7 +139,7 @@
 					<li><b>Coke, Diet, Sprite, Orange, Lemonade <i>$1.50</i></b></li>
 					<li><b>Spring Water &#40;Bottled&#41;<i>$1.20</i></b></li>
 				</ul>
-			<h3>*Served raw or undercooked. Consuming raw or undercooked meat, poultry, seafood, shellfish, or egg may increase your risk of foodborne illness.</h3>
+			<h3 id="warning">*Served raw or undercooked. Consuming raw or undercooked meat, poultry, seafood, shellfish, or egg may increase your risk of foodborne illness.</h3>
 	<?php
 		include("footer.php");
 	?>

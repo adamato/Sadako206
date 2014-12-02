@@ -51,6 +51,7 @@ body {
 	padding: 1.5em;
 	position: absolute;
 	top: 500; 
+	margin-bottom: 50px;
 }
 
 #instructions {
@@ -93,6 +94,7 @@ dl#deliveryFee {
 	#form {
 		width: 50%;
 		margin: auto;
+		margin-bottom: 60px;
 	}
 	#order_contents {
 		position: absolute;
