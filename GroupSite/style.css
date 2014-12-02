@@ -74,14 +74,25 @@ a:hover{
 
 .catering{
 	margin: 20px;
+	margin-bottom: 50px;
+	float: left;
 	text-align: center;
 }
 
 #cater{
-	width: 50%;
-	margin-left: 25%;
-	margin-bottom: 20px;
 	display: none;
+}
+
+#other{
+	display: none;
+	-webkit-transition: opacity 1s ease-in-out;
+  	-moz-transition: opacity 1s ease-in-out;
+  	-o-transition: opacity 1s ease-in-out;
+  	transition: opacity 1s ease-in-out;
+}
+
+#other:hover{
+	opacity: 0;
 }
 
 #warning{
@@ -90,6 +101,10 @@ a:hover{
 
 #contact_text{
 	margin-bottom: 50px;
+}
+
+h4{
+	font-style: italic;
 }
 
 footer{
@@ -115,8 +130,29 @@ iframe{
 		float: left;
 		width: 50%;
 	}
+	.cater_pics{
+		float: left;
+		width: 50%;
+	}
+	.catering{
+		float: right;
+		width: 45%;
+	}
 	#cater{
-		display: block;
+		display: inline-block;
+		position: absolute;
+		float: left;
+		width: 50%;
+		margin: 20px;
+		border-radius: 5px;
+	}
+	#other{
+		display: inline-block;
+		position: absolute;
+		float: left;
+		width: 50%;
+		margin: 20px;
+		border-radius: 5px;
 	}
 	iframe{
 		display: block;
