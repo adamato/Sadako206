@@ -44,6 +44,7 @@
 			</iframe>
 		</div>
 	</div>
+	<div id="clear_footercontact"></div>
 	<?php
 		include("footer.php");
 	?>
