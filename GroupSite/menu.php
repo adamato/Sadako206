@@ -74,7 +74,6 @@
 					<li><b>SALMON TERIYAKI ROLL</b>: grilled fresh salmon with teriyaki sauce <i><b> $8.99</b></i></li>
 				</ol>
 			</div>
-		</div>
 
 		<div class="other_sushi">
 			<h2>A La Carte &#40;Nigiri&#41;</h2>
@@ -140,6 +139,7 @@
 					<li><b>Spring Water &#40;Bottled&#41;<i>$1.20</i></b></li>
 				</ul>
 			<h3 id="warning">*Served raw or undercooked. Consuming raw or undercooked meat, poultry, seafood, shellfish, or egg may increase your risk of foodborne illness.</h3>
+		</div>
 	<?php
 		include("footer.php");
 	?>

@@ -27,6 +27,7 @@
 			<br><h4>*If you have further questions regarding catering, feel free to contact us!</h4>
 		</div>
 	</div>
+	<div id="clear_footercater"></div>
 	<?php
 		include("footer.php");
 	?>

@@ -23,7 +23,7 @@
 	<div class="col-xs-6">
 		<img src="store.jpg" alt="Sadako Store Front" id="store">
 	</div>
-	
+	<div id="clear_footerhome"></div>
 
 	<?php
 		include("footer.php");

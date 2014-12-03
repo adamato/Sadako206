@@ -424,8 +424,8 @@
 			<button class ="form_buttons" type="reset" form="form" onclick="resetMe()">Reset</button>	
 		</div>
 	</fieldset>
-</form>
 </div>
+</form>
 	<?php
 		include("footer.php");
 	?>

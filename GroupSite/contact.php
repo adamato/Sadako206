@@ -35,7 +35,6 @@
 			</p>
 			<p>Here at <b>Sadako Japanese Restaurant</b>, we work hard to ensure that your food is served both hot and fresh (or cold and fresh, if it is sushi or sashimi). It is also our full intention to provide you with the high quality of service that you deserve. Our patron’s enjoyment and security are very important to us. If you have any questions, feel free to contact us for more information.</p>
 
-			</p>
 		</div>
 		<div class="col-xs-4">
 			<iframe 

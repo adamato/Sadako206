@@ -20,6 +20,16 @@ body{
 	font-family: "Cambria";
 }
 
+#clear_footercater{
+	height: 150px;
+	clear: both;
+}
+
+#clear_footerhome{
+	height: 60px;
+	clear: both;
+}
+
 #store{
 	width: 100%;
 	margin-top: 20px;
@@ -114,8 +124,9 @@ footer{
 	background-color: #000000;
 	color: #EDEACB;
 	text-align: center;
-	position: fixed;
+	position: relative;
 	bottom: 0;
+	clear: both;
 }
 
 iframe{
